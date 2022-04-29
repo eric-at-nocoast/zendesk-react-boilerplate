@@ -1,0 +1,22 @@
+{
+	"author": {
+		"name": "Eric Nelson",
+		"url": "https://github.com/eric-at-zd"
+	},
+	"defaultLocale": "en",
+	"frameworkVersion": "2.0",
+	"location": {
+		"support": {
+			"ticket_sidebar": {
+				"size": {
+					"height": "500px",
+					"width": "100%"
+				},
+				"url": "assets/main.html"
+			}
+		}
+	},
+	"name": "React Boilerplate",
+	"private": true,
+	"version": "1.0"
+}

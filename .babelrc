@@ -1,0 +1,16 @@
+{
+	"plugins": [
+		"@babel/plugin-transform-async-to-generator",
+		"babel-plugin-styled-components"
+	],
+	"presets": [
+		[
+			"@babel/preset-env",
+			{
+				"corejs": 3,
+				"useBuiltIns": "usage"
+			}
+		],
+		"@babel/preset-react"
+	]
+}

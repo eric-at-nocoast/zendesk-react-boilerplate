@@ -2,7 +2,7 @@ import React, {StrictMode} from 'react';
 import ReactDOM from 'react-dom';
 import {ThemeProvider} from '@zendeskgarden/react-theming';
 import {GlobalContextProvider} from '../context/Global';
-import {DEFAULT_LOCALE, MODAL, TICKET_SIDEBAR} from '../lib/constants';
+import {DEFAULT_LOCALE} from '../lib/constants';
 import I18n from '../lib/i18n';
 import ErrorBoundary from './ErrorBoundary';
 import Main from './Main';

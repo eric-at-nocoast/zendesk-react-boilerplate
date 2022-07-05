@@ -32,7 +32,7 @@ class I18n {
 
 	tryRequire(locale) {
 		try {
-			return require(`../../translations/${locale}.json`);
+			return require(`../translations/${locale}.json`);
 		} catch (e) {
 			return null;
 		}

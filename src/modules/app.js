@@ -17,14 +17,7 @@ class App {
 
 		// this.initializePromise is only used in testing
 		// indicates app initilization(including all async operations) is complete
-		this.initializePromise = this.init();
-	}
-
-	/**
-	 * Initialize module, render main template
-	 */
-	init() {
-			this._initTicketSidebar();
+		this.initializePromise = this._initTicketSidebar();
 	}
 
 
@@ -54,19 +47,22 @@ class App {
 
 		I18n.loadTranslations(locale);
 
-		this._renderTicketSideBar();
-	}
-
-	async _getAppInstances() {
-		const instanceData = await this._client.get('instances');
-
-		return Object.fromEntries(
-			Object.entries(instanceData.instances).map(([uuid, {location}]) => [
-				location,
-				uuid
-			])
+		ReactDOM.render(
+			<StrictMode>
+				<ErrorBoundary>
+					<GlobalContextProvider
+						value={{ticketSidebar: this._client}}
+					>
+						<ThemeProvider theme={Theme}>
+							<Main data={this.states} />
+						</ThemeProvider>
+					</GlobalContextProvider>
+				</ErrorBoundary>
+			</StrictMode>,
+			document.querySelector('.main')
 		);
 	}
+
 
 	/**
 	 * Handles error

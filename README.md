@@ -11,7 +11,7 @@
 1. Open another terminal window run `npm run start`
 
 ## To build a production build:
-1. `npm run build`
+`npm run build`
 
 ## To run the test suite:
-- `npm run test`
+`npm run test`

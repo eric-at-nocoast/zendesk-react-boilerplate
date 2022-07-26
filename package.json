@@ -36,7 +36,7 @@
 		"@zendeskgarden/react-breadcrumbs": "^8.39.1",
 		"@zendeskgarden/react-buttons": "^8.39.0",
 		"@zendeskgarden/react-dropdowns": "^8.39.0",
-		"@zendeskgarden/react-forms": "^8.53.1",
+		"@zendeskgarden/react-forms": "^8.39.0",
 		"@zendeskgarden/react-grid": "^8.39.0",
 		"@zendeskgarden/react-notifications": "^8.39.0",
 		"@zendeskgarden/react-tags": "^8.39.0",
@@ -73,8 +73,5 @@
 		"build": "webpack -p --mode=production",
 		"start": "zcli apps:server ./dist"
 	},
-	"license": "MIT",
-	"dependencies": {
-		"express": "^4.18.1"
-	}
+	"license": "MIT"
 }
